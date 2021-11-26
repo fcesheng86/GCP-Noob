@@ -1,0 +1,5 @@
+#Publish Streaming Data into PubSub
+
+
+#Create a topic
+gcloud pubsub topics create sandiego
