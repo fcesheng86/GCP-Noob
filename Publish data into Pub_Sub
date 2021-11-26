@@ -20,4 +20,8 @@ gcloud pubsub subscriptions create --topic sandiego mySub1
 #pull message
 gcloud pubsub subscriptions pull --auto-ack mySub1
 
+#delete Subscription
+gcloud pubsub subscriptions delete mySub1
+
+
 ./send_sensor_data.py --speedFactor=60 --project $DEVSHELL_PROJECT_ID
