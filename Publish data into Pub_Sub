@@ -1,5 +1,18 @@
 #Publish Streaming Data into PubSub
 
+#MISC
+Project ID = gcloud config get-value project
+
+#clone google github training repository for VM
+git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+
 
 #Create a topic
 gcloud pubsub topics create sandiego
+
+
+#publish message
+gcloud pubsub topics publish sandiego --message "hello"
+
+#Create Subscription
+gcloud pubsub subscriptions create --topic sandiego mySub1
